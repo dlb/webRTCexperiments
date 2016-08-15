@@ -1,5 +1,6 @@
-this is based on the java webrtc player example to test that your setup works.. 
-you need to have gstreamer and kurento installed and the media saerver running, with this command:
+this is based on the java webrtc player example to test that your setup works.
+ 
+you need to have gstreamer and kurento installed and the media server running, with this command:
 cd /tmp
 sudo service kurento-media-server-6.0 start
 
@@ -18,6 +19,12 @@ returns a list of monitor sources on your machine, run this with your monitor so
 
 gst-launch-1.0 pulsesrc device = "alsa_output.pci-0000_00_1b.0.analog-stereo.monitor" ! wavenc ! filesink location="audioFIFO.wav"
 
+
+launch this java example with:
+
+mvn compile exec:java
+
+and assuming the java gods smile upon you..
 
 go to https://localhost:8443/
 
