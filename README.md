@@ -12,6 +12,8 @@ http://www.kurento.org/ - media server/webRTC gateway/gstreamer-openCV host
 
 https://gstreamer.freedesktop.org/ - get gstreamer 1.8.2 (current stable version) and install the base,good,bad and ugly plugins if you don't already have it installed. Make sure you can do 1.0 stuff not just .10 . 
 
+https://maven.apache.org/ if you want to run any java based examples
+
 https://nodejs.org/en/ - kurento has thrift bindings to javascript and java and supports a json-rpc api that can be called by anything with a little work. Path of least resistance is node on the server and browser javascript doing json magic on the client.I use the http server for testing and a few other things. These could all be changed to meet requirements of existing systems, this was just the quickest way to get something going. 
 
 Use NPM to get http-server or run whatever http server you like best.
