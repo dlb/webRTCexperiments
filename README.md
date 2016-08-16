@@ -5,6 +5,8 @@ I'm building this as decoupled as possible in case you want a different docker c
 
 I also have been doing my devolopment on a 7 year laptop because the room my main dev machine is in doesn't have AC and I would die ...but also to make certain this runs on low powered systems to keep AWS bills to a minimum. If you for some reason had machines with piles of GPU power the format trancoding could be optimized for CUDA/OpenCL but I'm not assuming that is the case.
 
+There is an INSTRUCTIONS.md file in the localhost folder that explains how to set everything up and do a simple test capturing audio out on the local machine and streaming it through kurento with a delay. There is also a docker file for running the kurento media server in it's own docker container. For that you do the same audio capture with gstreamer from before but route it to the docker container's open port using netcat. 
+
 #Stuff you will want to just apt-get/synaptic/etc 
 If you don't already have the current version and you aren't using the docker containerized version. Wherever possible I'm using the version in the apt repository for the latest LTS release of Ubuntu (actually Lubuntu since my laptop in ancient, so I had to install some things that would just come with a standard Ubuntu install), currently Xenial. All of these can be built from source with by hand with make if you really want to, but it's time consuming and  not necessary.
 
